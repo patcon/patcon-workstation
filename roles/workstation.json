@@ -1,0 +1,21 @@
+{
+  "name": "workstation",
+  "default_attributes": {
+    "authorization": {
+      "sudo": {
+        "passwordless": true
+      }
+    },
+    "ssh": {
+      "use_pam": true
+    }
+  },
+  "run_list": [
+    "recipe[user::data_bag]",
+    "recipe[sudo]",
+    "recipe[os-hardening]",
+    "recipe[ssh-hardening]",
+    "recipe[chef-dk]",
+    "recipe[mosh]"
+  ]
+}
