@@ -1,5 +1,10 @@
 source 'https://supermarket.chef.io'
 
+cookbook 'apt',
+  # Pending merge: Allow apt::unattended-upgrade to support debian platforms
+  # Ref: https://github.com/chef-cookbooks/apt/pull/162
+  github: 'patcon/apt',
+  branch: 'feature/unattended-upgrade-debian'
 cookbook 'chef-dk'
 cookbook 'janus'
 cookbook 'mosh'
