@@ -7,5 +7,5 @@ task :bootstrap => :prepare do
 end
 
 task :converge => :prepare do
-  sh 'bundle exec knife zero converge name:workstation --ssh-user=root'
+  sh 'bundle exec knife zero converge name:workstation'
 end
