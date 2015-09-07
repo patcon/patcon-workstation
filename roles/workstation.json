@@ -8,7 +8,10 @@
     },
     "ssh": {
       "use_pam": true
-    }
+    },
+    "users": [
+      "patcon"
+    ]
   },
   "run_list": [
     "recipe[user::data_bag]",
