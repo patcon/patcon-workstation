@@ -1,6 +1,7 @@
 source 'https://supermarket.chef.io'
 
 cookbook 'chef-dk'
+cookbook 'janus'
 cookbook 'mosh'
 cookbook 'os-hardening'
 cookbook 'pantry',

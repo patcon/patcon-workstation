@@ -14,6 +14,11 @@
         "passwordless": true
       }
     },
+    "janus": {
+      "users": [
+        "patcon"
+      ]
+    },
     "ssh": {
       "use_pam": true
     },
@@ -24,6 +29,7 @@
   "run_list": [
     "recipe[apt::unattended-upgrades]",
     "recipe[user::data_bag]",
+    "recipe[janus]",
     "recipe[sudo]",
     "recipe[os-hardening]",
     "recipe[chef-dk]",
