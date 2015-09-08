@@ -26,6 +26,7 @@
     ],
     "ssh": {
       "allow_tcp_forwarding": true,
+      "allow_agent_forwarding": true,
       "use_pam": true
     },
     "users": [
