@@ -28,6 +28,7 @@
   },
   "run_list": [
     "recipe[apt::unattended-upgrades]",
+    "recipe[fish-shell]",
     "recipe[user::data_bag]",
     "recipe[git]",
     "recipe[workstation::hub]",

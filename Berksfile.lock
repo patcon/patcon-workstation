@@ -4,6 +4,7 @@ DEPENDENCIES
     revision: f05305d3fff582ba38e081b994af005c86331343
     branch: feature/unattended-upgrade-debian
   chef-dk
+  fish-shell
   git
   janus
   mosh
@@ -32,6 +33,10 @@ GRAPH
   chocolatey (0.4.0)
     windows (~> 1.31)
   dmg (2.2.2)
+  fish-shell (1.0.1)
+    ark (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    yum (>= 0.0.0)
   git (4.3.4)
     build-essential (>= 0.0.0)
     dmg (>= 0.0.0)
