@@ -4,6 +4,7 @@ DEPENDENCIES
     revision: f05305d3fff582ba38e081b994af005c86331343
     branch: feature/unattended-upgrade-debian
   chef-dk
+  git
   janus
   mosh
   os-hardening
@@ -24,6 +25,11 @@ GRAPH
   chocolatey (0.4.0)
     windows (~> 1.31)
   dmg (2.2.2)
+  git (4.3.4)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    windows (>= 0.0.0)
+    yum-epel (>= 0.0.0)
   homebrew (1.13.0)
     build-essential (>= 2.1.2)
   janus (1.0.0)
@@ -48,6 +54,6 @@ GRAPH
   user (0.4.2)
   windows (1.38.1)
     chef_handler (>= 0.0.0)
-  yum (3.7.0)
+  yum (3.7.1)
   yum-epel (0.6.2)
     yum (~> 3.2)

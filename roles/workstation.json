@@ -29,6 +29,7 @@
   "run_list": [
     "recipe[apt::unattended-upgrades]",
     "recipe[user::data_bag]",
+    "recipe[git]",
     "recipe[janus]",
     "recipe[sudo]",
     "recipe[os-hardening]",

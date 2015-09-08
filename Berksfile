@@ -6,6 +6,7 @@ cookbook 'apt',
   github: 'patcon/apt',
   branch: 'feature/unattended-upgrade-debian'
 cookbook 'chef-dk'
+cookbook 'git'
 cookbook 'janus'
 cookbook 'mosh'
 cookbook 'os-hardening'
