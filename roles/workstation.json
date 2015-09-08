@@ -25,6 +25,7 @@
       "xclip"
     ],
     "ssh": {
+      "allow_tcp_forwarding": true,
       "use_pam": true
     },
     "users": [
