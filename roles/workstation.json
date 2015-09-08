@@ -30,6 +30,7 @@
     "recipe[apt::unattended-upgrades]",
     "recipe[user::data_bag]",
     "recipe[git]",
+    "recipe[workstation::hub]",
     "recipe[janus]",
     "recipe[sudo]",
     "recipe[os-hardening]",

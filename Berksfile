@@ -18,3 +18,5 @@ cookbook 'pantry',
 cookbook 'ssh-hardening'
 cookbook 'sudo'
 cookbook 'user'
+cookbook 'workstation',
+  path: 'cookbook-stubs/workstation'
