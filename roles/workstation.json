@@ -32,10 +32,12 @@
     ]
   },
   "run_list": [
+    "recipe[apt]",
     "recipe[apt::unattended-upgrades]",
     "recipe[fish-shell]",
     "recipe[pantry]",
     "recipe[user::data_bag]",
+    "recipe[ssh-hardening]",
     "recipe[git]",
     "recipe[workstation::hub]",
     "recipe[janus]",
