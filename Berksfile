@@ -10,7 +10,11 @@ cookbook 'fish-shell'
 cookbook 'git'
 cookbook 'janus'
 cookbook 'mosh'
-cookbook 'os-hardening'
+cookbook 'os-hardening',
+  # Pending merge: Don't step into other cookbook's namespaces (ie `packages` cookbook)
+  # Ref: https://github.com/hardening-io/chef-os-hardening/pull/88
+  github: 'patcon/chef-os-hardening',
+  branch: 'feature/better-namespace'
 cookbook 'pantry',
   # Pending merge: Add rudimentary debian support
   # See: https://github.com/opscode-cookbooks/pantry/pull/14

@@ -19,6 +19,11 @@
         "patcon"
       ]
     },
+    "packages": [
+      "colordiff",
+      "tree",
+      "xclip"
+    ],
     "ssh": {
       "use_pam": true
     },
@@ -29,6 +34,7 @@
   "run_list": [
     "recipe[apt::unattended-upgrades]",
     "recipe[fish-shell]",
+    "recipe[pantry]",
     "recipe[user::data_bag]",
     "recipe[git]",
     "recipe[workstation::hub]",

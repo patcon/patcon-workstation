@@ -9,6 +9,9 @@ DEPENDENCIES
   janus
   mosh
   os-hardening
+    git: git://github.com/patcon/chef-os-hardening.git
+    revision: 51cf1df57e640c407dbf048a349b380481622190
+    branch: feature/better-namespace
   pantry
     git: git://github.com/patcon/pantry.git
     revision: ca0fb8fc7f098c0cd8b599ac7ad0fe2a000d02fd
