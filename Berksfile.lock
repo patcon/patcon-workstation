@@ -78,6 +78,7 @@ GRAPH
   workstation (0.0.0)
     ark (>= 0.0.0)
     cron (>= 0.0.0)
+    git (>= 0.0.0)
   yum (3.7.1)
   yum-epel (0.6.2)
     yum (~> 3.2)

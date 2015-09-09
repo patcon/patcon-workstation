@@ -1,3 +1,4 @@
+require_recipe 'git'
 require_recipe 'ark'
 
 arch = case node['kernel']['machine']
