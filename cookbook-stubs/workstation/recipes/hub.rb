@@ -1,5 +1,5 @@
-require_recipe 'git'
-require_recipe 'ark'
+include_recipe 'git'
+include_recipe 'ark'
 
 arch = case node['kernel']['machine']
        when 'x86_64' then 'amd64'
