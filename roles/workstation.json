@@ -45,6 +45,7 @@
     "recipe[janus]",
     "recipe[sudo]",
     "recipe[os-hardening]",
+    "recipe[workstation::hardening]",
     "recipe[chef-dk]",
     "recipe[mosh]"
   ]
