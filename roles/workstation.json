@@ -35,6 +35,7 @@
   },
   "run_list": [
     "recipe[apt]",
+    "recipe[ntp]",
     "recipe[apt::unattended-upgrades]",
     "recipe[fish-shell]",
     "recipe[pantry]",

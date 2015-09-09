@@ -10,6 +10,7 @@ cookbook 'fish-shell'
 cookbook 'git'
 cookbook 'janus'
 cookbook 'mosh'
+cookbook 'ntp'
 cookbook 'os-hardening',
   # Pending merge: Don't step into other cookbook's namespaces (ie `packages` cookbook)
   # Ref: https://github.com/hardening-io/chef-os-hardening/pull/88
