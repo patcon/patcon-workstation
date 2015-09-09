@@ -4,6 +4,7 @@ DEPENDENCIES
     revision: f05305d3fff582ba38e081b994af005c86331343
     branch: feature/unattended-upgrade-debian
   chef-dk
+  fail2ban
   fish-shell
   git
   janus
@@ -38,6 +39,8 @@ GRAPH
     windows (~> 1.31)
   cron (1.6.1)
   dmg (2.2.2)
+  fail2ban (2.3.0)
+    yum-epel (>= 0.0.0)
   fish-shell (1.0.1)
     ark (>= 0.0.0)
     build-essential (>= 0.0.0)
