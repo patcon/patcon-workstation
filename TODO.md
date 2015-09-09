@@ -3,3 +3,4 @@
 * Update homebase dotfiles
 * Sort out how NOT to need agent forwarding
 * Add firewall rules
+* Install rk-hunter

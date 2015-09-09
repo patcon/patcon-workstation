@@ -1,14 +1,6 @@
 {
   "name": "workstation",
   "default_attributes": {
-    "apt": {
-      "unattended_upgrades": {
-        "enable": true,
-        "mail": "patrick.c.connolly@gmail.com",
-        "mail_only_on_error": false,
-        "remove_unused_dependencies": true
-      }
-    },
     "authorization": {
       "sudo": {
         "passwordless": true
@@ -24,31 +16,20 @@
       "tree",
       "xclip"
     ],
-    "ssh": {
-      "allow_tcp_forwarding": true,
-      "allow_agent_forwarding": true,
-      "use_pam": true
-    },
     "users": [
       "patcon"
     ]
   },
   "run_list": [
     "recipe[apt]",
-    "recipe[ntp]",
-    "recipe[apt::unattended-upgrades]",
+    "recipe[mosh]",
     "recipe[fish-shell]",
-    "recipe[pantry]",
     "recipe[user::data_bag]",
-    "recipe[ssh-hardening]",
-    "recipe[git]",
+    "recipe[sudo]",
+    "recipe[pantry]",
     "recipe[workstation::hub]",
     "recipe[janus]",
-    "recipe[sudo]",
-    "recipe[os-hardening]",
-    "recipe[fail2ban]",
-    "recipe[workstation::hardening]",
     "recipe[chef-dk]",
-    "recipe[mosh]"
+    "role[hardening]"
   ]
 }

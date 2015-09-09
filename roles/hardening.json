@@ -1,0 +1,26 @@
+{
+  "name": "hardening",
+  "default_attributes": {
+    "apt": {
+      "unattended_upgrades": {
+        "enable": true,
+        "mail": "patrick.c.connolly@gmail.com",
+        "mail_only_on_error": false,
+        "remove_unused_dependencies": true
+      }
+    },
+    "ssh": {
+      "allow_tcp_forwarding": true,
+      "allow_agent_forwarding": true,
+      "use_pam": true
+    }
+  },
+  "run_list": [
+    "recipe[ntp]",
+    "recipe[apt::unattended-upgrades]",
+    "recipe[ssh-hardening]",
+    "recipe[os-hardening]",
+    "recipe[fail2ban]",
+    "recipe[workstation::hardening]"
+  ]
+}
