@@ -9,6 +9,9 @@ cookbook 'chef-dk'
 cookbook 'fail2ban'
 cookbook 'fish-shell'
 cookbook 'git'
+cookbook 'homesick',
+  github: 'patcon/chef-homesick',
+  branch: 'feature/add-embedded-ruby-to-path'
 cookbook 'janus'
 cookbook 'mosh'
 cookbook 'ntp'

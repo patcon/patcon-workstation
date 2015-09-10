@@ -7,6 +7,10 @@ DEPENDENCIES
   fail2ban
   fish-shell
   git
+  homesick
+    git: git://github.com/patcon/chef-homesick.git
+    revision: bf85a5b9b20e2559e3b0ea8b039ff01bdd5812ee
+    branch: feature/add-embedded-ruby-to-path
   janus
   mosh
   ntp
@@ -52,6 +56,8 @@ GRAPH
     yum-epel (>= 0.0.0)
   homebrew (1.13.0)
     build-essential (>= 2.1.2)
+  homesick (0.4.1)
+    git (>= 0.0.0)
   janus (1.0.0)
   mosh (0.4.0)
     apt (>= 0.0.0)
@@ -63,7 +69,7 @@ GRAPH
     apt (>= 0.0.0)
     sysctl (>= 0.3.0)
     yum (>= 0.0.0)
-  packages (0.4.0)
+  packages (0.5.0)
   pantry (0.2.1)
     chocolatey (~> 0.2)
     homebrew (~> 1.12)
@@ -79,6 +85,7 @@ GRAPH
     ark (>= 0.0.0)
     cron (>= 0.0.0)
     git (>= 0.0.0)
+    homesick (>= 0.0.0)
   yum (3.7.1)
   yum-epel (0.6.2)
     yum (~> 3.2)

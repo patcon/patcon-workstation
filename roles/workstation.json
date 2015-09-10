@@ -6,6 +6,9 @@
         "passwordless": true
       }
     },
+    "homesick": {
+      "gem_version": "1.1.1"
+    },
     "janus": {
       "users": [
         "patcon"
@@ -23,14 +26,15 @@
   },
   "run_list": [
     "recipe[apt]",
+    "recipe[chef-dk]",
     "recipe[mosh]",
     "recipe[fish-shell]",
     "recipe[user::data_bag]",
     "recipe[sudo]",
     "recipe[pantry]",
     "recipe[workstation::hub]",
+    "recipe[workstation::dotfiles]",
     "recipe[janus]",
-    "recipe[chef-dk]",
     "role[hardening]"
   ]
 }
