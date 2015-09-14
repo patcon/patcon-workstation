@@ -31,6 +31,7 @@
   },
   "run_list": [
     "recipe[apt]",
+    "recipe[workstation::git-upgrade]",
     "recipe[chef-dk]",
     "recipe[mosh]",
     "recipe[fish-shell]",
