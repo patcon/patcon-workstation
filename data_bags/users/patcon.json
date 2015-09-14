@@ -4,7 +4,7 @@
   "groups": [
     "sysadmin"
   ],
-  "shell": "/usr/bin/fish",
+  "shell": "/bin/zsh",
   "ssh_keys": [
     "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGtb0wW4YCHMAMWx4S6TBnKSgzxpFCnac72evEBo56HRqdH53+YkepG6h/+yvqTUqprZShfhz0zWm4Kvg49hxh8="
   ]

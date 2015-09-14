@@ -30,6 +30,7 @@
     "recipe[mosh]",
     "recipe[fish-shell]",
     "recipe[user::data_bag]",
+    "recipe[oh-my-zsh]",
     "recipe[sudo]",
     "recipe[pantry]",
     "recipe[workstation::hub]",
