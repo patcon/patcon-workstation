@@ -9,6 +9,14 @@
         "remove_unused_dependencies": true
       }
     },
+    "authorization": {
+      "sudo": {
+        "sudoers_defaults": [
+          "env_reset",
+          "secure_path=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ]
+      }
+    },
     "ssh": {
       "client": {
         "weak_kex": true
