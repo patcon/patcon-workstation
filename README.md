@@ -27,6 +27,11 @@ rake converge  # subsequent chef runs
 
 Can use `SSH` or `MOSH` for accessing server:
 
-    ssh workstation # agent forwarding
+    ssh workstation
 
-    mosh workstation # agent forwarding unsupported
+If you have
+[compiled](https://github.com/mobile-shell/mosh/wiki/Build-Instructions)
+your local `mosh` for forward agent from this branch of
+[`rinne/mosh`](https://github.com/rinne/mosh/tree/ssh-agent-forwarding-ng):
+
+    mosh --forward-agent workstation

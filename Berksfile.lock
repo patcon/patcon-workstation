@@ -13,6 +13,9 @@ DEPENDENCIES
     branch: feature/add-embedded-ruby-to-path
   janus
   mosh
+    git: git://github.com/patcon/mosh-cookbook.git
+    revision: e13efa12cbeebe2258030ae11d5281a70dd4cd2d
+    branch: feature/source-install
   ntp
   oh-my-zsh
   os-hardening
@@ -62,6 +65,8 @@ GRAPH
   janus (1.0.0)
   mosh (0.4.0)
     apt (>= 0.0.0)
+    ark (>= 0.0.0)
+    build-essential (>= 0.0.0)
     yum (>= 0.0.0)
     yum-epel (>= 0.0.0)
   ntp (1.8.6)

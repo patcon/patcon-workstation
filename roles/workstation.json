@@ -14,6 +14,11 @@
         "patcon"
       ]
     },
+    "mosh": {
+      "install_type": "source",
+      "url": "https://github.com/rinne/mosh/archive/ssh-agent-forwarding-ng.tar.gz",
+      "version": "1.2.4-5e9bc4069fadb2a5d7cdb10286828fbdc4e0fdb5"
+    },
     "packages": [
       "colordiff",
       "tmux",

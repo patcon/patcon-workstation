@@ -13,7 +13,9 @@ cookbook 'homesick',
   github: 'patcon/chef-homesick',
   branch: 'feature/add-embedded-ruby-to-path'
 cookbook 'janus'
-cookbook 'mosh'
+cookbook 'mosh',
+  github: 'patcon/mosh-cookbook',
+  branch: 'feature/source-install'
 cookbook 'ntp'
 cookbook 'oh-my-zsh'
 cookbook 'os-hardening',
