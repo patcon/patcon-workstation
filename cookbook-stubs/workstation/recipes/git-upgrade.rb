@@ -14,7 +14,7 @@ end
 ).each do |pkg|
   apt_preference pkg do
     pin 'release a=wheezy-backports'
-    priority '600'
+    pin_priority '600'
   end
 end
 
