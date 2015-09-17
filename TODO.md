@@ -6,3 +6,4 @@
 * Install sshfs and create long-term storage server.
 * Add/update dotfiles-priv
 * GHI command line tool
+* bitbucket-cli command line tool

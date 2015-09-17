@@ -28,6 +28,7 @@ cookbook 'pantry',
   # See: https://github.com/opscode-cookbooks/pantry/pull/14
   github: 'patcon/pantry',
   branch: 'feature/debian-support'
+cookbook 'python'
 cookbook 'ssh-hardening'
 cookbook 'sudo'
 cookbook 'user'

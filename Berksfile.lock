@@ -26,6 +26,7 @@ DEPENDENCIES
     git: git://github.com/patcon/pantry.git
     revision: ca0fb8fc7f098c0cd8b599ac7ad0fe2a000d02fd
     branch: feature/debian-support
+  python
   ssh-hardening
   sudo
   user
@@ -84,6 +85,9 @@ GRAPH
     chocolatey (~> 0.2)
     homebrew (~> 1.12)
     packages (>= 0.0.0)
+  python (1.4.6)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
   ssh-hardening (1.1.0)
   sudo (2.7.2)
   sysctl (0.6.2)
