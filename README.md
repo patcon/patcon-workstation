@@ -35,3 +35,11 @@ your local `mosh` for forward agent from this branch of
 [`rinne/mosh`](https://github.com/rinne/mosh/tree/ssh-agent-forwarding-ng):
 
     mosh --forward-agent workstation
+
+#### Tips
+
+When using `tmux`, you usually can't use agent forwarding when re-using
+an old detached sessions that the original SSH connection expired on.
+This, run withing the re-attached `tmux` session, resolves that:
+
+    source ~/.ssh/latestagent
