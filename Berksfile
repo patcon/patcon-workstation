@@ -5,6 +5,10 @@ def cookbook_stub(name)
   cookbook name, path: "cookbook-stubs/#{name}"
 end
 
+cookbook 'android-sdk',
+  # Pending release
+  # See: https://github.com/gildegoma/chef-android-sdk/issues/23
+  github: 'gildegoma/chef-android-sdk'
 cookbook 'apt',
   # Pending merge: Allow apt::unattended-upgrade to support debian platforms
   # Ref: https://github.com/chef-cookbooks/apt/pull/162
@@ -39,3 +43,4 @@ cookbook 'sudo'
 cookbook 'user'
 
 cookbook_stub 'workstation'
+cookbook_stub 'patcon_android-sdk'
