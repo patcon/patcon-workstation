@@ -1,5 +1,10 @@
 source 'https://supermarket.chef.io'
 
+# Helper method
+def cookbook_stub(name)
+  cookbook name, path: "cookbook-stubs/#{name}"
+end
+
 cookbook 'apt',
   # Pending merge: Allow apt::unattended-upgrade to support debian platforms
   # Ref: https://github.com/chef-cookbooks/apt/pull/162
@@ -32,5 +37,5 @@ cookbook 'python'
 cookbook 'ssh-hardening'
 cookbook 'sudo'
 cookbook 'user'
-cookbook 'workstation',
-  path: 'cookbook-stubs/workstation'
+
+cookbook_stub 'workstation'
