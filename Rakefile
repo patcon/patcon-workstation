@@ -2,9 +2,15 @@ task :prepare do
   sh 'berks vendor cookbooks'
 end
 
-desc 'Bootstrap the workstation'
-task :bootstrap => :prepare do
-  sh 'bundle exec knife zero bootstrap workstation --run-list="role[workstation]"'
+task :bootstrap, [:ssh_user] => :prepare do |t, args|
+  args.with_defaults(
+    # Default to root when bootstrapping
+    :ssh_user => 'root'
+  )
+
+  ssh_user = args[:ssh_user]
+
+  sh "bundle exec knife zero bootstrap workstation --run-list='role[workstation]' --ssh-user=#{ssh_user}"
 end
 
 desc 'Converge the workstation'
