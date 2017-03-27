@@ -10,12 +10,12 @@ task :bootstrap, [:ssh_user] => :prepare do |t, args|
 
   ssh_user = args[:ssh_user]
 
-  sh "bundle exec knife zero bootstrap workstation --run-list='role[workstation]' --ssh-user=#{ssh_user}"
+  sh "knife zero bootstrap workstation --run-list='role[workstation]' --ssh-user=#{ssh_user}"
 end
 
 desc 'Converge the workstation'
 task :converge => :prepare do
-  sh 'bundle exec knife zero converge name:workstation'
+  sh 'knife zero converge name:workstation'
 end
 
 task :default do
