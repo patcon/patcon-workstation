@@ -8,14 +8,17 @@ task :bootstrap, [:ssh_user] => :prepare do |t, args|
     :ssh_user => 'root'
   )
 
-  ssh_user = args[:ssh_user]
-
-  sh "knife zero bootstrap workstation --run-list='role[workstation]' --ssh-user=#{ssh_user}"
+  sh "knife zero bootstrap workstation --run-list='role[workstation]' --ssh-user=#{args[:ssh_user]}"
 end
 
 desc 'Converge the workstation'
-task :converge => :prepare do
-  sh 'knife zero converge name:workstation'
+task :converge, [:ssh_user] => :prepare do |t, args|
+  args.with_defaults(
+    # Default to root when bootstrapping
+    :ssh_user => 'root'
+  )
+
+  sh "knife zero converge name:workstation --ssh-user=#{args[:ssh_user]}"
 end
 
 task :default do
