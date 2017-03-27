@@ -25,7 +25,7 @@
         "allow_agent_forwarding": true,
         "allow_tcp_forwarding": true,
         "use_pam": true
-      },
+      }
     }
   },
   "run_list": [
@@ -33,7 +33,6 @@
     "recipe[apt::unattended-upgrades]",
     "recipe[ssh-hardening]",
     "recipe[os-hardening]",
-    "recipe[fail2ban]",
     "recipe[workstation::hardening]"
   ]
 }
