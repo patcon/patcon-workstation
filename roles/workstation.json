@@ -33,7 +33,7 @@
   "run_list": [
     "recipe[apt]",
     "recipe[workstation::git-upgrade]",
-    "recipe[chef-dk]",
+    "recipe[workstation::chefdk]",
     "recipe[mosh]",
     "recipe[fish-shell]",
     "recipe[user::data_bag]",

@@ -6,7 +6,7 @@ DEPENDENCIES
     git: https://github.com/patcon/apt.git
     revision: f05305d3fff582ba38e081b994af005c86331343
     branch: feature/unattended-upgrade-debian
-  chef-dk
+  chef-ingredient
   fail2ban
   fish-shell
   git
@@ -51,15 +51,14 @@ GRAPH
   build-essential (8.0.0)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
-  chef-dk (3.1.0)
-    dmg (~> 2.2)
+  chef-ingredient (2.0.0)
   chef_handler (2.1.0)
   chocolatey (0.6.2)
     windows (~> 1.38)
   compat_resource (12.16.3)
   cron (4.1.0)
     compat_resource (>= 0.0.0)
-  dmg (2.4.0)
+  dmg (3.1.0)
   fail2ban (4.0.0)
     yum-epel (>= 0.0.0)
   fish-shell (1.0.1)
