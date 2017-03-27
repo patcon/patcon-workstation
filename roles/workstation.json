@@ -44,7 +44,6 @@
     "recipe[workstation::hub]",
     "recipe[workstation::dotfiles]",
     "recipe[janus]",
-    "recipe[patcon_android-sdk]",
     "role[hardening]"
   ]
 }
