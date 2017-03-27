@@ -14,7 +14,7 @@ cookbook 'apt',
   # Ref: https://github.com/chef-cookbooks/apt/pull/162
   github: 'patcon/apt',
   branch: 'feature/unattended-upgrade-debian'
-cookbook 'chef-dk'
+cookbook 'chef-ingredient'
 cookbook 'fail2ban'
 cookbook 'fish-shell'
 cookbook 'git'
@@ -38,7 +38,7 @@ cookbook 'pantry',
   github: 'patcon/pantry',
   branch: 'feature/debian-support'
 cookbook 'python'
-cookbook 'ssh-hardening'
+cookbook 'ssh-hardening', '~> 2.0'
 cookbook 'sudo'
 cookbook 'user'
 
