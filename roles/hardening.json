@@ -17,14 +17,16 @@
         ]
       }
     },
-    "ssh": {
-      "client": {
-        "weak_kex": true
-      },
-      "server": {
-        "allow_agent_forwarding": true,
-        "allow_tcp_forwarding": true,
-        "use_pam": true
+    "ssh-hardening": {
+      "ssh": {
+        "client": {
+          "weak_kex": true
+        },
+        "server": {
+          "allow_agent_forwarding": true,
+          "allow_tcp_forwarding": true,
+          "use_pam": true
+        }
       }
     }
   },
