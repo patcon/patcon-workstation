@@ -1,0 +1,11 @@
+{
+  "id": "cadalso",
+  "comment": "Enrique Cadalso",
+  "groups": [
+    "sysadmin"
+  ],
+  "shell": "/bin/bash",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBJ1kohgVpx8bFTtlKW3fUWtIojpy6o2nUkqXyVRNgRyCB25D6nG/P0eHVGJxVfN1aLeVrvPlW5VGO/0Xb6DZUe4n+DpZYQYGibBIib9FBhmTeB47/K/VlxzUWcPK77dKP0pUvxVF3mq1TLCjdDJFbfE16w5rFDM5ZtBkQ/stXfJmKowjmPEtmfeZj3pZiKNcTYYNPeWOZqE5m27tnOUpJNhrOWW8U2MASUrEp/EKdS0wAZkrft84KpJZkNf66kCeD2ndiDD4mRNYf6+tB+yo56iAST38rsoqwx7sStwl3+b+0Oet/t5yBw925wEyRPlYxtKRu19oUgqa5TgZmudmN"
+  ]
+}
