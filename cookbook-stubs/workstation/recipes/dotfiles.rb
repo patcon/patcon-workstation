@@ -2,6 +2,12 @@ include_recipe "homesick"
 
 user = node['workstation']['user']
 
+file "/home/#{user}/.ssh/known_hosts" do
+  owner user
+  group user
+  action :touch
+end
+
 execute "add-github-to-known-hosts" do
   user user
   command "ssh-keyscan -t rsa github.com >> /home/#{user}/.ssh/known_hosts"
